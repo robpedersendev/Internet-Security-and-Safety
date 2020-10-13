@@ -1,24 +1,30 @@
 import React from "react";
-import logo from "./logo.svg";
+import Matrix from "./Assets/matrix.mp4";
 import "./App.css";
 
 function App() {
+  // This line will eventually be its own element. But this is how I am able to display the video
+  const Video = () => 
+        (<video autoPlay muted loop disablePictureInPicture preload="auto" id="matrix" controlsList="nodownload">
+          <source src={Matrix} type="video/mp4" />
+          <source src={Matrix} type="video/ogg" />
+           Your browswer does not support the Video tag
+      </video>)
+  ;
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrerr"
-        >
-          Learn React
-        </a>
+      {/* Full Screen, responsive video playing */}
+      <Video />
+      {/* Begin text content on the screen */}
+      <header>
+
       </header>
+      <main>
+
+      </main>
+      <footer>
+
+      </footer>
     </div>
   );
 }
