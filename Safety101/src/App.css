@@ -14,3 +14,15 @@ ul.social_media,
 ul.main_nav {
   display: flex;
 }
+
+nav img#logo {
+  height: 100px;
+}
+
+nav {
+  z-index: 2;
+}
+
+.vidplaying {
+  z-index: -1;
+}
