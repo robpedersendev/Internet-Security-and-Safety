@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       {/* Full Screen, responsive video playing */}
-      {/* <Video /> */}
+      <Video />
       {/* Begin text content on the screen */}
       <header>
       <nav className="social_media">
@@ -27,7 +27,7 @@ function App() {
       
       </nav>
       <nav className="main_nav">
-        <img>Logo</img>
+        {/* <img>Logo</img> */}
       <ul>
         <NavLink             
         className="navbar-item"
